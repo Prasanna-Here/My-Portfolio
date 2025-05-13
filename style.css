@@ -197,7 +197,6 @@ body{
 }
 
 @media screen and (max-width:500px) and (min-width:380px){
-    @media screen and (max-width: 440px) and (min-width: 420px) {
     .hero-section {
         background-image: url("./assets/Hero-section.png");
         background-size: cover;
@@ -251,6 +250,4 @@ body{
         bottom: 10%;
         left: 20%;
     }
-}
-
 }

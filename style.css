@@ -3,6 +3,7 @@
     margin: 0px;
     border: 0px;
     padding: 0px;
+    box-sizing:border-box;
 }
 body{
     background-color:#0a0a0c;
@@ -194,70 +195,4 @@ body{
 .social-links a:hover svg {
     transform: scale(1.1);
     fill: #888;
-}
-
-@media screen and (max-width:500px) and (min-width:380px){
-    html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}   
-    .hero-section {
-        background-image: url("./assets/Hero-section.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        .hero-section {
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-}
-    }
-
-    #name {
-        color: white;
-        font-family: "Open-Sans", sans-serif;
-        font-size: 60px;
-        font-weight: bolder;
-        padding-top: 50px; 
-    }
-
-    #tags {
-        color: white;
-        font-family: "Space Mono", monospace;
-        font-size: 20px;
-    }
-
-    .coding-shapes {
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-    }
-
-    .shape {
-        position: absolute;
-        font-size: 30px; 
-        color: rgba(255, 255, 255, 0.1);
-        font-family: monospace;
-    }
-
-    .shape:nth-child(1) {
-        top: 20%;
-        left: 10%;
-    }
-
-    .shape:nth-child(2) {
-        top: 50%;
-        left: 80%;
-    }
-
-    .shape:nth-child(3) {
-        bottom: 10%;
-        left: 20%;
-    }
 }

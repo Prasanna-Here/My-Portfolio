@@ -196,7 +196,7 @@ body{
     fill: #888;
 }
 
-@media screen and (min-width:600px){
+@media screen and (max-width:500px){
     body{
         background-color: white;
     }

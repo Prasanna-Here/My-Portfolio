@@ -195,3 +195,9 @@ body{
     transform: scale(1.1);
     fill: #888;
 }
+
+@media screen and (min-width:600px){
+    body{
+        background-color: white;
+    }
+}

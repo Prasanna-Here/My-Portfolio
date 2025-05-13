@@ -58,12 +58,12 @@ body{
 }
 
 .about{
-    height: 300px;
     color: #f2f4f7;
     text-align: center;
     padding-top: 50px;
     padding-left: 200px;
     padding-right: 200px;
+    height: auto;
 }
 .title{
     font-family: "Open-Sans", sans-serif;
@@ -195,4 +195,126 @@ body{
 .social-links a:hover svg {
     transform: scale(1.1);
     fill: #888;
+}
+
+@media screen and (max-width: 1024px) {
+  /* General responsive padding */
+  .about, .skills, .work, .contact {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .skill-icons {
+    column-gap: 100px;
+    row-gap: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #name {
+    font-size: 60px;
+    padding-top: 40px;
+  }
+
+  #tags {
+    font-size: 18px;
+  }
+
+  .about {
+    padding: 40px 30px;
+    height: auto;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .skills {
+    padding: 40px 30px;
+    min-height: auto;
+  }
+
+  .skill-icons {
+    column-gap: 60px;
+    row-gap: 40px;
+  }
+
+  .skill-icons svg {
+    width: 60px;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project img {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 3px solid #333;
+  }
+
+  .project-info {
+    padding: 20px;
+  }
+
+  .project-info h3 {
+    font-size: 22px;
+  }
+
+  .project-info p {
+    font-size: 16px;
+  }
+
+  .social-links {
+    gap: 20px;
+  }
+
+  .social-links svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #name {
+    font-size: 40px;
+  }
+
+  #tags {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .about p, .project-info p, .contact-text {
+    font-size: 14px;
+  }
+
+  .skills {
+    padding: 30px 20px;
+  }
+
+  .about, .work, .contact {
+    padding: 30px 20px;
+  }
+
+  .skill-icons {
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+
+  .skill-icons svg {
+    width: 50px;
+  }
+
+  .tech-used {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
 }

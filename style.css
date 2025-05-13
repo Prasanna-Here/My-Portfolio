@@ -198,6 +198,11 @@ body{
 
 @media screen and (max-width:500px) and (min-width:380px){
     .hero-section {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+    .hero-section {
         background-image: url("./assets/Hero-section.png");
         background-size: cover;
         background-position: center;
